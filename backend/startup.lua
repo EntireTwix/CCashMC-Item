@@ -1,7 +1,5 @@
 rednet.open("back")
 
-os.pullEvent = os.pullEventRaw
-
 while true do
     local id, message = rednet.receive()
     local message = textutils.unserialize(message)
