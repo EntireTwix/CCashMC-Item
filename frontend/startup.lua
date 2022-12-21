@@ -4,7 +4,7 @@ local backend_id = 2
 
 rednet.open("back")
 
--- os.pullEvent = os.pullEventRaw
+os.pullEvent = os.pullEventRaw
 
 while true do
     term.clear()
