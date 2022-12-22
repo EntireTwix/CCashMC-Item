@@ -1,7 +1,7 @@
 -- for transferring grand economy balances to CCash
 
 local ccash = require("ccash.api")
-ccash.meta.set_server_address("http://54.38.56.148/")
+ccash.meta.set_server_address("url")
 
 print("enter player to transfer")
 local player_name = read()
