@@ -5,4 +5,4 @@ an item ATM for the [CCash](https://github.com/EntireTwix/CCash) connected servi
 * backend - command computer on the left
 * frontend - normal or advanced computer on the right
 
-both files require this [lua API](https://github.com/SpaceCat-Chan/CatsCCashLuaApi) for CCash at that its folder be named `ccash`
+all three files require this [lua API](https://github.com/SpaceCat-Chan/CatsCCashLuaApi) for CCash at that its folder be named `ccash`
