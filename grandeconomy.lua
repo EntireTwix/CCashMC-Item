@@ -12,7 +12,7 @@ while (string.sub(success[1], i, i) ~= " ") do
     i = i - 1
 end
 local balance = tonumber(string.sub(success[1], i + 1, #(success[1]) - 2))
-if ccash.admin.impact_bal("admin", "Ys^142BG9%rA", player_name, balance * 100) then 
+if ccash.admin.impact_bal("admin", "root", player_name, balance * 100) then 
     commands.exec("/wallet set " .. player_name .. " 0")
     print("transfer successful!\n transferred " .. balance .. "gp -> " .. balance * 100 .. "CSH")
 else
