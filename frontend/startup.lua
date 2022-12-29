@@ -17,7 +17,7 @@ while true do
     local pass = read("*")
     print()
 
-    if not print(ccash.verify_password(name, pass)) then
+    if not ccash.verify_password(name, pass) then
         print("invalid credentials")    
         os.sleep(2)
     else
