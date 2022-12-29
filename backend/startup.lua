@@ -28,12 +28,12 @@ while true do
         local count, success, amount = commands.exec("/clear " .. message[1] .. " " .. message[5])
         if count then
             print(message[1] .. " +" .. price * amount)
-            ccash.impact_bal("admin", "root", message[1], price * amount)
+            ccash.admin.impact_bal("admin", "root", message[1], price * amount)
         end
         rednet.send(id, success[1])      
     else
         local amount = math.floor(ccash.get_bal(message[1]) / price)
-        ccash.impact_bal("admin", "root", message[1], -(price * amount))
+        ccash.admin.impact_bal("admin", "root", message[1], -(price * amount))
         print(message[1] .. " -" .. price * amount)
         commands.exec("/give " .. message[1] .. " " .. message[5] .. " " .. amount)
     end
